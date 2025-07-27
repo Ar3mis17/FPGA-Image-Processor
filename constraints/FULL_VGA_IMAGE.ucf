@@ -1,0 +1,27 @@
+# CLOCK
+NET "clk" LOC = "P55" | IOSTANDARD = LVCMOS33;  # 100MHz onboard clock
+
+# SWITCHES (Filter selection)
+NET "filter_select[0]" LOC = "P57" | IOSTANDARD = LVCMOS33;  # SW0
+NET "filter_select[1]" LOC = "P58" | IOSTANDARD = LVCMOS33;  # SW1
+
+# VGA OUTPUT
+NET "hsync" LOC = "P124" | IOSTANDARD = LVCMOS33;  # HSYNC
+NET "vsync" LOC = "P123" | IOSTANDARD = LVCMOS33;  # VSYNC
+
+# VGA RED (3 bits)
+NET "vga_red[2]" LOC = "P126" | IOSTANDARD = LVCMOS33;  # RED2
+NET "vga_red[1]" LOC = "P127" | IOSTANDARD = LVCMOS33;  # RED1
+NET "vga_red[0]" LOC = "P128" | IOSTANDARD = LVCMOS33;  # RED0
+
+# VGA GREEN (3 bits)
+NET "vga_green[2]" LOC = "P133" | IOSTANDARD = LVCMOS33;  # GREEN2
+NET "vga_green[1]" LOC = "P134" | IOSTANDARD = LVCMOS33;  # GREEN1
+NET "vga_green[0]" LOC = "P135" | IOSTANDARD = LVCMOS33;  # GREEN0
+
+# VGA BLUE (2 bits)
+NET "vga_blue[1]" LOC = "P137" | IOSTANDARD = LVCMOS33;  # BLUE1
+NET "vga_blue[0]" LOC = "P138" | IOSTANDARD = LVCMOS33;  # BLUE0
+
+# Optional: Add drive strength and slew rate if needed
+# Example: | DRIVE = 8 | SLEW = FAST;

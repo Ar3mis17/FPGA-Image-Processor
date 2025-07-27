@@ -1,0 +1,13 @@
+# Xilinx ISE
+*.log
+*.jou
+_xmsgs/
+xst/
+netgen/
+*.bit
+*.bgn
+*.drc
+*.map
+*.mrp
+*.ngd
+*.par
